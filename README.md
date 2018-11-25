@@ -136,9 +136,22 @@ vc15はxamppに入っているphpのコンパイラのバージョンであり�
 | ImageMagick number of supported formats:  | 238                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ImageMagick supported formats             | 3FR, 3G2, 3GP, AAI, AI, ART, ARW, AVI, AVS, BGR, BGRA, BGRO, BIE, BMP, BMP2, BMP3, BRF, CAL, CALS, CANVAS, CAPTION, CIN, CIP, CLIP, CLIPBOARD, CMYK, CMYKA, CR2, CRW, CUR, CUT, DCM, DCR, DCX, DDS, DFONT, DJVU, DNG, DOT, DPS, DPX, DXT1, DXT5, EMF, EPDF, EPI, EPS, EPS2, EPS3, EPSF, EPSI, EPT, EPT2, EPT3, ERF, EXR, FAX, FILE, FITS, FLIF, FPX, FRACTAL, FTP, FTS, G3, G4, GIF, GIF87, GRADIENT, GRAY, GROUP4, GV, HALD, HDR, HISTOGRAM, HRZ, HTM, HTML, HTTP, HTTPS, ICB, ICO, ICON, IIQ, INFO, INLINE, IPL, ISOBRL, ISOBRL6, J2C, J2K, JBG, JBIG, JNG, JNX, JP2, JPC, JPE, JPEG, JPG, JPM, JPS, JPT, JSON, K25, KDC, LABEL, M2V, M4V, MAC, MAP, MASK, MAT, MATTE, MEF, MIFF, MKV, MNG, MONO, MOV, MP4, MPC, MPEG, MPG, MRW, MSL, MSVG, MTV, MVG, NEF, NRW, NULL, ORF, OTB, OTF, PAL, PALM, PAM, PANGO, PATTERN, PBM, PCD, PCDS, PCL, PCT, PCX, PDB, PDF, PDFA, PEF, PES, PFA, PFB, PFM, PGM, PICON, PICT, PIX, PJPEG, PLASMA, PNG, PNG00, PNG24, PNG32, PNG48, PNG64, PNG8, PNM, PPM, PS, PS2, PS3, PSB, PSD, PTIF, PWP, RADIAL-GRADIENT, RAF, RAS, RAW, RGB, RGBA, RGBO, RGF, RLA, RLE, RMF, RW2, SCR, SCREENSHOT, SCT, SFW, SGI, SHTML, SIX, SIXEL, SPARSE-COLOR, SR2, SRF, STEGANO, SUN, SVG, SVGZ, TEXT, TGA, THUMBNAIL, TIFF, TIFF64, TILE, TIM, TTC, TTF, TXT, UBRL, UBRL6, UIL, UYVY, VDA, VICAR, VID, VIFF, VIPS, VST, WBMP, WEBP, WMF, WMV, WPG, X3F, XBM, XC, XCF, XPM, XPS, XV, YCbCr, YCbCrA, YUV |
 
-これは、ImageMagickのモジュールが正常に読み込まれたことを意味する。
+これは、ImageMagickのモジュールが正常に読み込まれたことを意味する。  
 
+そして`http://localhost/test.php` にアクセスすると、
 
+> <br />
+> <b>Fatal error</b>:  Uncaught ImagickException: UnableToOpenBlob 'hoge.pdf': No such file or directory @ error/blob.c/OpenBlob/3315 > in C:\xampp\htdocs\test.php:5
+> Stack trace:
+> #0 C:\xampp\htdocs\test.php(5): Imagick-&gt;readimage('hoge.pdf')
+> #1 {main}
+>   thrown in <b>C:\xampp\htdocs\test.php</b> on line <b>5</b><br />
+
+のように表示され、エラーの内容が実験2のときとは異なるものとなった。  
+このことにより、phpプログラム自体は書き直さなくてはいけないが、モジュール自体は動作しているということが改めて確認された。
+
+#### 3-4 実験4 phpファイルの読み込み とその結果
+ImageMagickをphpで動かし、pdfファイルを読み込むことのできるphpプログラムのコードがネットのどこかに落ちていないか探した。  
 
 
 <!--
