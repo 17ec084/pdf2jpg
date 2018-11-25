@@ -25,6 +25,7 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 図3-1-2のようなページが表示された。  
 ![図3-1-2](https://raw.githubusercontent.com/17ec084/pdf2jpg/secondChallenge/data/3_1_2.png "図3-1-2")  
 <Div Align="center">図3-1-2 実験1の結果</Div>  
+
 #### 3-1-3 実験2 拡張モジュールの確認
 ①次のようなファイルtest.php[2]を作成し、`C:\xampp\htdocs`にコピーした。このディレクトリにコピーすることは、サーバへのアップロードに相当する。  
 
