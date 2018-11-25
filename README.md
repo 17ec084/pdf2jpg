@@ -56,48 +56,21 @@ $im->destroy();
 ```
 
 
-<!--
-①次のようなファイルtest.phpを作成し、サーバにアップロードした。[1]  
-
-```php:3-1-1
-<?php
-
-$im = new Imagick();
-//画像を生成したいPDFを読み込む
-$im->readImage('hoge.pdf');
-//ページ数を取得する
-$totalPage = $im->getImageScene();
-
-for ($i = 0; $i <= $totalPage; $i++) {
-	//PDFのページ
-	$im->setImageIndex($i);
-	//サムネイルサイズ 640pxに収める
-	$im->thumbnailImage(640, 640, true);
-	//シャープ
-	$im->sharpenImage(0, 1);
-	//生成
-	$im->writeImage('out_' . $i . '.jpg');
-}
-
-$im->destroy();
-
-?>
-
-```
-
-②Microsoft Word 2016で「hoge.pdf」とだけ書いた文章hoge.pdfを作成した。  
+②Microsoft Word 2016で「hoge.pdf」とだけ書いた文章hoge.pdfを作成し、`C:\xampp\htdocs`にコピーした。  
 ③WWWブラウザで、サーバにアップロードしたtest.phpを閲覧した。  
 
 #### 3-1-2.実験1の結果
 実験1の結果、次のようにFatal errorが表示された。
 
 > <br />
-> <b>Fatal error</b>:  Uncaught Error: Class 'Imagick' not found in /storage/ssd3/785/2791785/public_html/test.php:3
+> <b>Fatal error</b>:  Uncaught Error: Class 'Imagick' not found in C:\xampp\htdocs\test.php:3
 > Stack trace:
 > #0 {main}
->  thrown in <b>/storage/ssd3/785/2791785/public_html/test.php</b> on line <b>3</b><br />
+>   thrown in <b>C:\xampp\htdocs\test.php</b> on line <b>3</b><br />
 
-このことから、サーバにはImageckというクラスが用意されていない、即ちImageMagickがインストールされていないということが分かった。
+このことから、xamppによって作られたサーバにはImageckというクラスが用意されていない、即ちImageMagickがインストールされていないということが分かった。
+
+<!--
 
 #### 3-2-1.実験2 ImageMagickのインストール
 ①http://pecl.php.net/package/imagick
