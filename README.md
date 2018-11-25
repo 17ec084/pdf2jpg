@@ -101,8 +101,11 @@ vc15はxamppに入っているApacheのバージョンであり、x86は、xampp
 のところに`extension=` が並んでいるところがあるので、そこに`extension=php_imagick.dll` を加筆した。  
 ⑥図3-3-1のように環境変数を指定した。
 <Div Align="center">
+
 ![図3-3-1](https://raw.githubusercontent.com/17ec084/pdf2jpg/secondChallenge/data/3_3_1.png "図3-3-1")  
+
 図3-3-1 環境変数の設定
+
 </Div>  
 
 
