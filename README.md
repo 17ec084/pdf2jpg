@@ -89,10 +89,16 @@ print phpinfo();
 vc15はxamppに入っているApacheのバージョンであり、x86は、xamppに入っているソフトはみな32 bitで動作するものであるからである。  
 そして展開し、中身を`c:\xampp\ImageMagick`にすべてコピーした。  
 ④Imagickの公式ダウンロードページにアクセスし、`3.4.3` ディレクトリを選択し、`php_imagick-3.4.3-7.2-ts-vc15-x86.zip` を探した。  
-しかし、存在しなかった。しかし、別のページ[4]には存在したので、それをダウンロードした。  
+参考サイト[2]に示されたダウンロードページには存在しなかった。しかし、別のページ[4]には存在したので、それをダウンロードした。  
 展開後`php_imagick.dll` を`C:\xampp\php\ext `へコピーし、  
 `CORE_RL_` で始まるファイルをすべて`C:\xampp\ImageMagick\bin\` に上書きコピーした。  
-⑤
+⑤`C:\xampp\php\php.ini` の  
+
+> ;;;;;;;;;;;;;;;;;;;;;;  
+> ; Dynamic Extensions ;  
+> ;;;;;;;;;;;;;;;;;;;;;;  
+
+のところに`extension=` が並んでいるところがあるので、そこに`extension=php_imagick.dll` を加筆した。
  
 
 <!--
