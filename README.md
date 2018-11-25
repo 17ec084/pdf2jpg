@@ -9,13 +9,21 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 そこで、pdfファイルをjpgファイルに変換して、画像としてREADME.mdに挿入するということを考えた。  
 このプロセスを自動化するためのプログラムの作成を目的とする。
 ## 2.使用環境、ソフト
-･[xampp]()  
+･Windows 10 Pro
+･[xampp (PHP 7.2.12)](https://www.apachefriends.org/jp/index.html) (Control Panelのバージョンはv3.2.2であった) 
 ･ImageMagick  
 ･Microsoft Word 2016
-<!--
+
 ## 3.実験と結果
 実験日: 2018/11/25
-#### 3-1-1.実験1 拡張モジュールの確認 
+#### 3-1-1.実験1 端末のサーバ化[1]
+①参考サイト[1]に従ってXAMPPをインストールした。  
+但し、すべてのソフトを選択してインストールした。 
+また、xamppをインストールしたディレクトリは`c:\xampp`である。
+②http\://localhost/ 
+
+
+<!--
 ①次のようなファイルtest.phpを作成し、サーバにアップロードした。[1]  
 
 ```php:3-1-1
@@ -85,7 +93,7 @@ $im->destroy();
 そして外部サイトが返却した画像をそのまま返す  
 
 ## 5.参考サイト
-[1]https://ameblo.jp/linking/entry-10997312536.html  
+[1]http://www.kent-web.com/www/chap1.html  
 [2]http://pecl.php.net/package/imagick  
     
 -->
