@@ -59,9 +59,12 @@ $im->destroy();
 このことから、サーバにはImageckというクラスが用意されていない、即ちImageMagickがインストールされていないということが分かった。
 
 #### 3-2-1.実験2 ImageMagickのインストール
-
+①http://pecl.php.net/package/imagick
+[2]
+から最新のtgzファイルをダウンロードした。
 
 <!--
 [1]https://ameblo.jp/linking/entry-10997312536.html
+[2]http://pecl.php.net/package/imagick
 -->
     
