@@ -9,10 +9,10 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 そこで、pdfファイルをjpgファイルに変換して、画像としてREADME.mdに挿入するということを考えた。  
 このプロセスを自動化するためのプログラムの作成を目的とする。
 ## 2.使用環境、ソフト
-･[000webhost.com](https://www.000webhost.com/)がフリーで提供するサーバ  
+･[xampp]()  
 ･ImageMagick  
 ･Microsoft Word 2016
-
+<!--
 ## 3.実験と結果
 実験日: 2018/11/25
 #### 3-1-1.実験1 拡張モジュールの確認 
@@ -88,3 +88,4 @@ $im->destroy();
 [1]https://ameblo.jp/linking/entry-10997312536.html  
 [2]http://pecl.php.net/package/imagick  
     
+-->
