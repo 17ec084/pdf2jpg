@@ -1,25 +1,29 @@
-# pdf2jpg(php�ɂ��t�@�C�������ϊ����K)
+﻿# pdf2jpg(phpによるファイル自動変換演習)
 
-����I�ɕ׋����Ă�����̂ł���B
-## 1.�ړI
-���php�v���O���~���O�̉��K�B  
-�܂��AGitHub�ł͑��̃��[�U�����|�W�g���������Ƃ��AREADME.md���\�������B  
-md�t�@�C��(MarkDown�L�@�̃e�L�X�g�t�@�C��)�ɂ̓e�L�X�g�̑��A�摜��}�����邱�Ƃ��ł���B  
-�܂��A���ɑ�w�̎��Ƃ̃m�[�g�Ƃ��ă��|�W�g�������J���Ă���ꍇ�A���l�ɍł��ǂ�ł��炢�����̂�pdf�t�@�C���ł������肷�邱�Ƃ������B  
-�����ŁApdf�t�@�C����jpg�t�@�C���ɕϊ����āA�摜�Ƃ���README.md�ɑ}������Ƃ������Ƃ��l�����B  
-���̃v���Z�X�����������邽�߂̃v���O�����̍쐬��ړI�Ƃ���B
-## 2.�g�p���A�\�t�g
-�[000webhost.com](https://www.000webhost.com/)���t���[�Œ񋟂���T�[�o  
-�ImageMagick  
-�Microsoft Word 2016
+自主的に勉強しているものである。
+## 1.目的
+主にphpプログラミングの演習。  
+また、GitHubでは他のユーザがレポジトリを見たとき、README.mdが表示される。  
+mdファイル(MarkDown記法のテキストファイル)にはテキストの他、画像を挿入することができる。  
+また、特に大学の授業のノートとしてリポジトリを公開している場合、他人に最も読んでもらいたいのはpdfファイルであったりすることも多い。  
+そこで、pdfファイルをjpgファイルに変換して、画像としてREADME.mdに挿入するということを考えた。  
+このプロセスを自動化するためのプログラムの作成を目的とする。
+## 2.使用環境、ソフト
+･[000webhost.com](https://www.000webhost.com/)がフリーで提供するサーバ  
+･ImageMagick  
+･Microsoft Word 2016
 
-## 3.�����ƌ���
-������: 2018/11/25
-#### 3-1-1.����1 �g�����W���[���̊m�F 
-�@���̂悤�ȃt�@�C��test.php���쐬���A�T�[�o�ɃA�b�v���[�h�����B  
-�AMicrosoft Word 2016�Łuhoge.pdf�v�Ƃ�������������hoge.pdf���쐬�����B  
-�BWWW�u���E�U�ŁA�T�[�o�ɃA�b�v���[�h����test.php���{�������B  
+## 3.実験と結果
+実験日: 2018/11/25
+#### 3-1-1.実験1 拡張モジュールの確認 
+①次のようなファイルtest.phpを作成し、サーバにアップロードした。[1]  
+②Microsoft Word 2016で「hoge.pdf」とだけ書いた文章hoge.pdfを作成した。  
+③WWWブラウザで、サーバにアップロードしたtest.phpを閲覧した。  
 
-#### 3-1-2.����1�̌���
+#### 3-1-2.実験1の結果
 
+
+<!--
+[1]https://ameblo.jp/linking/entry-10997312536.html
+-->
     
