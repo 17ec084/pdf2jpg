@@ -58,6 +58,9 @@ $im->destroy();
 
 このことから、サーバにはImageckというクラスが用意されていない、即ちImageMagickがインストールされていないということが分かった。
 
+#### 3-2-1.実験2 ImageMagickのインストール
+
+
 <!--
 [1]https://ameblo.jp/linking/entry-10997312536.html
 -->
