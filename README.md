@@ -20,7 +20,7 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 
 ```php:3-1-1
    コード
-```(
+```
 
 ②Microsoft Word 2016で「hoge.pdf」とだけ書いた文章hoge.pdfを作成した。  
 ③WWWブラウザで、サーバにアップロードしたtest.phpを閲覧した。  
