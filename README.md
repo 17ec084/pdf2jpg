@@ -73,34 +73,36 @@ $im->destroy();
 
 
 #### 3-3-1.実験3 ImageMagickのインストール[2]
-①次のようなisTs.phpを作成し、`c:\xampp\htdocs` にコピーし、 http\://localhost/isTs.php にアクセスし、phpがthread safeか否かを確認した。[3]  
+①次のようなisTs.php[3]を作成し、`c:\xampp\htdocs` にコピーし、 http\://localhost/isTs.php にアクセスし、  
+･php versionを確認した。  
+･Compiler versionを確認した。  
+･Architectureを確認した。  
+･thread safeが有効か否かを確認した。  
 
 ```php:3-3-1
 <?php
 print phpinfo();
 ?>
 ```
-
-から最新のtgzファイルをダウンロードした。  
 ②GhostScriptを`C:\xampp\gs\gs9.26`にインストールした。  
 ③ImageMagickの公式ダウンロードページにアクセスし、ImageMagick-7.0.7-11-vc15-x86.zip をダウンロードした。  
 vc15はxamppに入っているApacheのバージョンであり、x86は、xamppに入っているソフトはみな32 bitで動作するものであるからである。  
 そして展開し、中身を`c:\xampp\ImageMagick`にすべてコピーした。  
-④Imagickの公式ダウンロードページにアクセスし、3.4.3ディレクトリを選択し、_
-  
-php7212
-vc15
-x86
-
+④Imagickの公式ダウンロードページにアクセスし、`3.4.3` ディレクトリを選択し、`php_imagick-3.4.3-7.2-ts-vc15-x86.zip` を探した。  
+しかし、存在しなかった。しかし、別のページ[4]には存在したので、それをダウンロードした。  
+展開後`php_imagick.dll` を`C:\xampp\php\ext `へコピーし、  
+`CORE_RL_` で始まるファイルをすべて`C:\xampp\ImageMagick\bin\` に上書きコピーした。  
+⑤
+ 
 
 <!--
-②Apacheのバージョンを確認[4]したところ、  
+②Apacheのバージョンを確認[x]したところ、  
 `Apache/2.4.37 (Win32) VC15`  
 であったので、Visual c++ 15 をインストールした。
 php.iniファイルの設定を変更し、ImageMagickを有効にしようと試みた。
 -->
 
-
+<!--
 #### 3-2-2.実験2の結果
 ①のファイルをサーバにダウンロードする手段がなかった。  
 また、②php.iniファイルにアクセスすることができなかった。  
@@ -125,6 +127,7 @@ php.iniファイルの設定を変更し、ImageMagickを有効にしようと�
 [1]http://www.kent-web.com/www/chap1.html  
 [2]https://qiita.com/_xider/items/73c29d79eb4e252e64f7  
 [3]https://mumu.jpn.ph/forest/computer/2017/03/19/8093/  
-[4]http://www.dojeun.com/contentsview.php?listid=00144  
+[4]https://windows.php.net/downloads/pecl/snaps/imagick/3.4.3/
+[x]http://www.dojeun.com/contentsview.php?listid=00144  
     
 -->
