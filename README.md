@@ -26,10 +26,10 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 ![図3-1-2](https://raw.githubusercontent.com/17ec084/pdf2jpg/secondChallenge/data/3_1_2.png "図3-1-2")  
 <Div Align="center">図3-1-2 実験1の結果</Div>  
 
-#### 3-1-3 実験2 拡張モジュールの確認
+#### 3-2-1 実験2 拡張モジュールの確認
 ①次のようなファイルtest.php[2]を作成し、`C:\xampp\htdocs`にコピーした。このディレクトリにコピーすることは、サーバへのアップロードに相当する。  
 
-```php:3-1-1
+```php:3-2-1
 <?php
 
 $im = new Imagick();
@@ -59,8 +59,8 @@ $im->destroy();
 ②Microsoft Word 2016で「hoge.pdf」とだけ書いた文章hoge.pdfを作成し、`C:\xampp\htdocs`にコピーした。  
 ③WWWブラウザで、サーバにアップロードしたtest.phpを閲覧した。  
 
-#### 3-1-2.実験1の結果
-実験1の結果、次のようにFatal errorが表示された。
+#### 3-2-2.実験2の結果
+実験2の結果、次のようにFatal errorが表示された。
 
 > <br />
 > <b>Fatal error</b>:  Uncaught Error: Class 'Imagick' not found in C:\xampp\htdocs\test.php:3
@@ -70,13 +70,36 @@ $im->destroy();
 
 このことから、xamppによって作られたサーバにはImageckというクラスが用意されていない、即ちImageMagickがインストールされていないということが分かった。
 
-<!--
 
-#### 3-2-1.実験2 ImageMagickのインストール
-①http://pecl.php.net/package/imagick
-[2]
-から最新のtgzファイルをダウンロードした。
-②php.iniファイルの設定を変更し、ImageMagickを有効にしようと試みた。
+
+#### 3-3-1.実験3 ImageMagickのインストール[2]
+①次のようなisTs.phpを作成し、`c:\xampp\htdocs` にコピーし、 http\://localhost/isTs.php にアクセスし、phpがthread safeか否かを確認した。[3]  
+
+```php:3-3-1
+<?php
+print phpinfo();
+?>
+```
+
+から最新のtgzファイルをダウンロードした。  
+②GhostScriptを`C:\xampp\gs\gs9.26`にインストールした。  
+③ImageMagickの公式ダウンロードページにアクセスし、ImageMagick-7.0.7-11-vc15-x86.zip をダウンロードした。  
+vc15はxamppに入っているApacheのバージョンであり、x86は、xamppに入っているソフトはみな32 bitで動作するものであるからである。  
+そして展開し、中身を`c:\xampp\ImageMagick`にすべてコピーした。  
+④Imagickの公式ダウンロードページにアクセスし、3.4.3ディレクトリを選択し、_
+  
+php7212
+vc15
+x86
+
+
+<!--
+②Apacheのバージョンを確認[4]したところ、  
+`Apache/2.4.37 (Win32) VC15`  
+であったので、Visual c++ 15 をインストールした。
+php.iniファイルの設定を変更し、ImageMagickを有効にしようと試みた。
+-->
+
 
 #### 3-2-2.実験2の結果
 ①のファイルをサーバにダウンロードする手段がなかった。  
@@ -100,6 +123,8 @@ $im->destroy();
 
 ## 5.参考サイト
 [1]http://www.kent-web.com/www/chap1.html  
-[2]http://pecl.php.net/package/imagick  
+[2]https://qiita.com/_xider/items/73c29d79eb4e252e64f7  
+[3]https://mumu.jpn.ph/forest/computer/2017/03/19/8093/  
+[4]http://www.dojeun.com/contentsview.php?listid=00144  
     
 -->
