@@ -23,7 +23,36 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 ②http\://localhost/ にアクセスした。
 #### 3-1-2.実験1の結果
 図3-1-2のようなページが表示された。  
+![図3-1-2](https://raw.githubusercontent.com/17ec084/pdf2jpg/secondChallenge/data/3_1_2.png "図3-1-2")  
+<Div Align="center">図3-1-2 実験1の結果</Div>  
+#### 3-1-3 実験2 拡張モジュールの確認
+①次のようなファイルtest.php[2]を作成し、`C:\xampp\htdocs`にコピーした。このディレクトリにコピーすることは、サーバへのアップロードに相当する。  
 
+```php:3-1-1
+<?php
+
+$im = new Imagick();
+//画像を生成したいPDFを読み込む
+$im->readImage('hoge.pdf');
+//ページ数を取得する
+$totalPage = $im->getImageScene();
+
+for ($i = 0; $i <= $totalPage; $i++) {
+	//PDFのページ
+	$im->setImageIndex($i);
+	//サムネイルサイズ 640pxに収める
+	$im->thumbnailImage(640, 640, true);
+	//シャープ
+	$im->sharpenImage(0, 1);
+	//生成
+	$im->writeImage('out_' . $i . '.jpg');
+}
+
+$im->destroy();
+
+?>
+
+```
 
 
 <!--
