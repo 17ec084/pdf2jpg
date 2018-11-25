@@ -54,8 +54,9 @@ $im->destroy();
 > <b>Fatal error</b>:  Uncaught Error: Class 'Imagick' not found in /storage/ssd3/785/2791785/public_html/test.php:3
 > Stack trace:
 > #0 {main}
+>  thrown in <b>/storage/ssd3/785/2791785/public_html/test.php</b> on line <b>3</b><br />
 
-
+このことから、サーバにはImageckというクラスが用意されていない、即ちImageMagickがインストールされていないということが分かった。
 
 <!--
 [1]https://ameblo.jp/linking/entry-10997312536.html
