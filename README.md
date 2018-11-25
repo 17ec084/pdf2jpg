@@ -48,6 +48,15 @@ $im->destroy();
 ③WWWブラウザで、サーバにアップロードしたtest.phpを閲覧した。  
 
 #### 3-1-2.実験1の結果
+実験1の結果、次のようにFatal errorが表示された。
+___
+
+<br />
+<b>Fatal error</b>:  Uncaught Error: Class 'Imagick' not found in /storage/ssd3/785/2791785/public_html/test.php:3
+Stack trace:
+#0 {main}
+  thrown in <b>/storage/ssd3/785/2791785/public_html/test.php</b> on line <b>3</b><br />
+___
 
 
 <!--
