@@ -9,8 +9,8 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 そこで、pdfファイルをjpgファイルに変換して、画像としてREADME.mdに挿入するということを考えた。  
 このプロセスを自動化するためのプログラムの作成を目的とする。
 ## 2.使用環境、ソフト
-･Windows 10 Pro
-･[xampp (PHP 7.2.12)](https://www.apachefriends.org/jp/index.html) (Control Panelのバージョンはv3.2.2であった) 
+･Windows 10 Pro  
+･[xampp (PHP 7.2.12)](https://www.apachefriends.org/jp/index.html) (Control Panelのバージョンはv3.2.2であった)  
 ･ImageMagick  
 ･Microsoft Word 2016
 
