@@ -74,7 +74,7 @@ $im->destroy();
 
 
 
-#### 3-3-1.実験3 ImageMagickを利用可能可[2]
+#### 3-3-1.実験3 ImageMagickを利用可能化[2]
 ①次のようなisTs.php[3]を作成し、`c:\xampp\htdocs` にコピーし、 http\://localhost/isTs.php にアクセスし、  
 ･php versionを確認した。  
 ･Compiler versionを確認した。  
