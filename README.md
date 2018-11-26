@@ -11,7 +11,9 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 ## 2.使用環境、ソフト
 ･Windows 10 Pro  
 ･[xampp (PHP 7.2.12)](https://www.apachefriends.org/jp/index.html) (Control Panelのバージョンはv3.2.2であった)  
-･ImageMagick  
+･[ImageMagick-7.0.7-11-vc15-x86](https://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x86.zip)  
+･[php_imagick-3.4.3-7.2-ts-vc15-x86](https://windows.php.net/downloads/pecl/snaps/imagick/3.4.3/php_imagick-3.4.3-7.2-ts-vc15-x86.zip)  
+･[Ghostscript 9.26 for Windows (32 bit) AGPL licence](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs926/gs926w32.exe)  
 ･Microsoft Word 2016
 
 ## 3.実験と結果
