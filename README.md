@@ -1,4 +1,4 @@
-﻿# pdf2jpg(phpによるファイル自動変換演習(2回目の挑戦、失敗))
+﻿# pdf2jpg(phpによるファイル自動変換演習(3回目の挑戦))
 
 自主的に勉強しているものである。
 ## 1.目的
@@ -13,6 +13,8 @@ mdファイル(MarkDown記法のテキストファイル)にはテキストの�
 ･[xampp (PHP 7.2.12)](https://www.apachefriends.org/jp/index.html) (Control Panelのバージョンはv3.2.2であった)  
 ･ImageMagick  
 ･Microsoft Word 2016
+
+<!--
 
 ## 3.実験と結果
 実験日: 2018/11/25
@@ -167,3 +169,4 @@ ImageMagickをphpで動かし、pdfファイルを読み込むことのできる
 [5]https://oxynotes.com/?p=10474  
 [6]https://qiita.com/tsukachin999/items/f955b77095ec8502ab9b 
     
+-->
